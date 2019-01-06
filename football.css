@@ -1,0 +1,101 @@
+/* .container{
+    background-image: url("field.jpg");
+    background-repeat:no-repeat;
+} */
+#Box1{
+    height: 70px;
+    width:100%;
+    border :2px solid black;
+    padding:5px; 
+    text-align:left;
+    margin-bottom:8px;
+    font-family: 'Lato', sans-serif;
+    font-size:16px;
+        
+    background-image: url("fbfield.jpg");
+    
+  
+        /* Full height */
+    height: 50%; 
+      
+        /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:black;
+}
+
+#name{
+    text-align: left;
+
+}
+
+#src{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#icon{
+    position:relative;
+    bottom:50px;
+    left:394px;
+}
+
+#srcBar{
+    width:507px;
+    margin-right: 4px;
+    border:1px solid #000;
+}
+
+
+
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+.topnav{
+    background-color:#3F1052;
+    width:100%;
+    height: 50px;
+    display: flex;
+    justify-content:center;
+    justify-content: space-around;
+    
+}
+
+#matchgame{
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-wrap:wrap;
+    background-color:whitesmoke;
+    padding:20px;
+    
+}
+.boxItem{
+    border-radius:4px;
+    padding: 10px; 
+    margin: 30px;
+    border: 1px solid black;
+    color:black;
+    width:calc(100%/4);
+    background-color:rgb(112,128,144)
+    ;
+
+    
+}
+
+
