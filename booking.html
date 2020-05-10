@@ -1,0 +1,109 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../root/css/booking.css">
+      
+      <script src="js/appoint.js"></script>
+
+  </head>
+  <body>
+    <div class="inner-layer">
+        <div class="container">
+          <div class="row no-margin">
+              <div class="col-sm-7">
+                  <div class="content">
+                      <h1>Book an Appointment Now and Save Time</h1>
+                      <p id="patGreeting">Please select a suitable date and a time (in 30 minute intervals e.g. 10:00 or 11:30) to check if it is available with your doctor.</p>
+                  </div>
+              </div>
+              <div class="col-sm-5">
+                  <div class="form-data">
+                      <div class="form-head">
+                          <h2>Schedule Appointment</h2>
+                      </div>
+                      <div class="form-body">
+                          <div class="row form-row">
+                            <input id="input-name" type="text" placeholder="Enter Full name" class="form-control">
+                          </div>
+                          <div class="row form-row">
+                            <label for="appt">Select a time:</label>
+                            <input type="time" id="appt" name="appt" class="form-control">
+                          </div>
+                         <div class="row form-row">
+                            <label for="Date">Date:</label>
+                            <input type="date" id="date" name="Date" class="form-control">
+                               
+                          </div>
+                          <div class="row form-row">
+                            <label for="Doc">Doctors</label>
+                            <select name="Doctors" id="docs" class="form-control">
+                              
+                              <option value="Doc1">Mark</option>
+                              <option value="Doc2">John</option>
+                            </select>
+                          </div>
+                         
+                          <!--
+                          <h6>Address Details</h6>
+
+                           <div class="row form-row">
+                              <div class="col-sm-6">
+                                 <input type="text" placeholder="Enter Area" class="form-control">
+                              </div>
+                              <div class="col-sm-6">
+                                 <input type="text" placeholder="Enter City" class="form-control">
+                              </div>
+                          </div>
+                           <div class="row form-row">
+                              <div class="col-sm-6">
+                                 <input type="text" placeholder="Enter State" class="form-control">
+                              </div>
+                              <div class="col-sm-6">
+                                 <input type="text" placeholder="Postal Code" class="form-control">
+                              </div>
+                          </div>
+                            -->
+
+                           <div class="row form-row">
+                             <button class="btn btn-success btn-appointment" onclick="book()">
+                               Book Appointment
+                             </button>
+                          </div>
+                          <div class="swapper">
+                              <p class="swap-message">Have an Appointment? <a href="#">View</a></p>
+                          </div>
+                      </div>
+                      <div class="existing-appt">
+                          <h2>My Appointments</h2>
+                          <p class="swap-message">Need a new Appointment? <a href="#">Book</a></p>
+                      </div>
+                  </div>
+                  <div class="log-button-holder">
+                        <div>
+                            <Button class="log-Btn" onclick="logOut()">Log Out</Button>
+                        </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    
+        <script src='https://code.jquery.com/jquery-3.2.1.min.js'>
+        </script>
+        
+        <script>
+            $('.swap-message a').click(function() {
+                $('.existing-appt').animate({height: "toggle", opacity: "toggle"}, "slow");
+                $('.form-body').animate({height: "toggle", opacity: "toggle"}, "slow");
+            });
+        </script>
+      
+  </body>
+</html>
